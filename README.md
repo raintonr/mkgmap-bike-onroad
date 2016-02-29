@@ -17,7 +17,7 @@ For example, the principality of Andorra (468 km²):
 Example execution
 
 ```
-java -Xms512m -Xmx4096m -jar mkgmap.jar -c mkgmap.options europe-latest.osm.pbf
+java -Xms512m -Xmx4096m -jar mkgmap.jar -c mkgmap.options andorra-latest.osm.pbf
 ```
 
 
