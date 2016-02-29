@@ -20,4 +20,24 @@ Example execution
 java -Xms512m -Xmx4096m -jar mkgmap.jar -c mkgmap.options andorra-latest.osm.pbf
 ```
 
+## Example renders
 
+Below are example renders (with [QMapShack](https://bitbucket.org/maproom/qmapshack)) of Andorra using Openfietsmap & mkgmap-bike-onroad for comparison:
+
+mkgmap-bike-onroad:
+![Eg1](/examples/eg1.bike-onroad.jpg?raw=true)
+
+Openfietsmap:
+![Eg1](/examples/eg1.openfietsmap.jpg?raw=true)
+
+mkgmap-bike-onroad:
+![Eg2](/examples/eg2.bike-onroad.jpg?raw=true)
+
+Openfietsmap:
+![Eg2](/examples/eg2.openfietsmap.jpg?raw=true)
+
+mkgmap-bike-onroad:
+![Eg3](/examples/eg3.bike-onroad.jpg?raw=true)
+
+Openfietsmap:
+![Eg3](/examples/eg3.openfietsmap.jpg?raw=true)
