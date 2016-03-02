@@ -14,10 +14,29 @@ For example, the principality of Andorra (468 km²):
 - Get maps from http://download.geofabrik.de/
 - Get mkgmap from http://www.mkgmap.org.uk/
 
-Example execution
+### Example execution
 
 ```
 java -Xms512m -Xmx4096m -jar mkgmap.jar -c mkgmap.options andorra-latest.osm.pbf
+```
+
+## Large Areas
+
+Using this style mkgmap requires OSM data as input, but at this time it's unclear as to if a subset of this data (eg: just those elements such as roads, etc) is available so full OSM data is used as input.
+
+Unfortunately large areas cannot be processed with mkgmap unless there is a *lot* of RAM availbale to the JVM. However, a large Garmin output file can still be created by processing OSM data in chunks and then merging the created images. In order to do this simple use of the *mapname* command line argument is required (otherwise all maps are output with the default name and merging is not possible due to this overlap).
+
+Note that the author has been unable to have mkgmap successfully merge multipe image outputs but [GMapTool](http://www.gmaptool.eu/) has been found to work.
+
+### Merging Execution
+
+For example, merge three Southern French departments:
+
+```
+java -Xms512m -Xmx4096m -jar mkgmap.jar -c mkgmap.options --mapname=1 aquitaine-latest.osm.pbf
+java -Xms512m -Xmx4096m -jar mkgmap.jar -c mkgmap.options --mapname=2 midi-pyrenees-latest.osm.pbf
+java -Xms512m -Xmx4096m -jar mkgmap.jar -c mkgmap.options --mapname=3 languedoc-roussillon-latest.osm.pbf
+gmt -j 1.img 2.img 3.img -o gmapsupp.img
 ```
 
 ## Example renders
