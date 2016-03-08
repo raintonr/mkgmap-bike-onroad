@@ -11,7 +11,7 @@ For example, the principality of Andorra (468 km²):
 
 ## Usage
 
-- Get maps from http://download.geofabrik.de/
+- Get maps suitable for mkgmap input (eg. PBF format) from http://download.geofabrik.de/, http://extract.bbbike.org/, etc
 - Get mkgmap from http://www.mkgmap.org.uk/
 
 ### Example execution
