@@ -17,5 +17,6 @@ highway=unclassified & surface=unpaved [ 0x0a road_class=0 resolution 22]
 
 highway=path & bicycle=designated [ 0x07 road_class=0 resolution 22]
 highway=cycleway [ 0x07 road_class=0 resolution 22]
+highway=living_street [ 0x07 road_class=0 resolution 22]
 
 natural=coastline [0x15 resolution 18]
